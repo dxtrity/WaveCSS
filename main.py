@@ -30,7 +30,10 @@ def cli(YoN: bool,css):
 def init_css(x):
     if path.isfile(x) == True:
         with open(x,'w') as f:
-            f.write(csslib.css_imports())
+            f.write(csslib.header())
+            f.write(csslib.param_start())
+            f.write(csslib.defaults(default_font_weight,default_font_size,default_font_colour))
+            f.write(csslib.param_end())
             css_done = True
             print("[blue][WAVECSS][/blue] [green]CSS has been initialised.[/green]")
         cli(css_done,css_path)
@@ -48,12 +51,10 @@ def main():
         global default_font_weight
         global default_font_size
         global default_font_colour
-        global default_font_accent
         global css_done
         default_font_weight = cfg['default-font-weight']
         default_font_size   = cfg['default-font-size']
         default_font_colour = cfg['default-font-colour']
-        default_font_accent = cfg['default-font-accent']
         config_complete = True
         if css_done == True:
             cli(config_complete,css_path)

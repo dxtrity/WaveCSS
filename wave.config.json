@@ -2,6 +2,5 @@
     "css-path":"css/style.css",
     "default-font-weight":300,
     "default-font-size":"24px",
-    "default-font-colour":"#ffffff",
-    "default-font-accent":"#000000"
+    "default-font-colour":"#ffffff"
 }
