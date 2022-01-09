@@ -38,7 +38,7 @@ def init_css(filepath):
         print("[blue][WAVECSS][/blue] [red]ERROR: There was a problem locating stylesheet. Check your configuration file.[/red]")
 
 def main():
-    with open('wave.config.json') as f:
+    with open('./wave.config.json') as f:
         cfg = json.load(f)
         t = time.localtime()
         current_time = time.strftime("%H:%M:%S", t)

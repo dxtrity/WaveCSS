@@ -1,0 +1,8 @@
+.bg-dark-green{background-color: var(--bg-d-g);}
+.bg-light-green{background-color: var(--bg-l-g);}
+.bg-dark-red{background-color: var(--bg-d-r);}
+.bg-light-red{background-color: var(--bg-l-r);}
+.bg-dark-blue{background-color: var(--bg-d-b);}
+.bg-light-blue{background-color: var(--bg-l-b);}
+.bg-dark-yellow{background-color: var(--bg-d-y);}
+.bg-light-yellow{background-color: var(--bg-l-y);}
