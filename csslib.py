@@ -16,4 +16,4 @@ def defaults(weight,size,color):
     return f"\tfont-weight: {weight};\n\tfont-size: {size};\n\tcolor: {color};\n"
 
 def param_end():
-    return "}\n"
+    return "}\n\n"
